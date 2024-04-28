@@ -20,6 +20,9 @@ from datetime import date, datetime, timedelta
 from pytz import timezone
 from random import randint
 from urllib.parse import urlparse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 from config import *
 
