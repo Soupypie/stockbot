@@ -20,9 +20,6 @@ from datetime import date, datetime, timedelta
 from pytz import timezone
 from random import randint
 from urllib.parse import urlparse
-from dotenv import load_dotenv
-
-load_dotenv()
 
 from config import *
 
@@ -35,9 +32,9 @@ __version__ = STOCKBOT_VERSION
 
 TZ = timezone('America/New_York')
 
-APIKEYID = os.getenv('APCA_API_KEY_ID')
-APISECRETKEY = os.getenv('APCA_API_SECRET_KEY')
-APIBASEURL = os.getenv('APCA_API_BASE_URL')
+APIKEYID='PKAZYFRTKZSTVLXAI89I'
+APISECRETKEY='8Yk7lz4UOkegMmRi48IKvLwjDfpewHjPLkK0BTIP'
+APIBASEURL='https://paper-api.alpaca.markets'
 
 api = tradeapi.REST(APIKEYID, APISECRETKEY, APIBASEURL)
 
